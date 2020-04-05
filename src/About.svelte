@@ -72,14 +72,16 @@
   /* CSS Tricks for image hover */
   .hover_image:hover {
     text-decoration: none;
-  } /* Optional (avoid undesired underscore if a is used as wrapper) */
+  }
+
   .hide {
     display: none;
   }
-  /* Do the shift: */
+
   .hover_image:hover img:first-child {
     display: none;
   }
+
   .hover_image:hover img:last-child {
     display: inline-block;
   }
@@ -89,7 +91,7 @@
   <div class="headshot hover_image">
     <a href="#" class="hover_image">
       <img alt="headshot" src="headshot.png" />
-      <img alt="meme headshot" src="memeheadshot.png" class="hide"/>
+      <img alt="meme headshot" src="memeheadshot.png" class="hide" />
     </a>
   </div>
   <div class="hi">
