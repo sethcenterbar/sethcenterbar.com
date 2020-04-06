@@ -1,5 +1,14 @@
 <script>
-  export let name;
+  import { onMount } from "svelte";
+  import TypeIt from "typeit";
+
+  onMount(() => {
+    new TypeIt("#typeit", {
+      speed: 75,
+      waitUntilVisible: true,
+      cursor: false
+    }).go();
+  });
 </script>
 
 <style>
@@ -53,10 +62,9 @@
     text-transform: uppercase;
   }
 
-
   .de {
     filter: grayscale(100%);
-    color: #f32f31;
+    color: #522d5b;
   }
 
   .de:hover {
@@ -64,12 +72,12 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
 
   .dd {
     filter: grayscale(100%);
-    color: #1da1f2;
+    color: #d7385e;
   }
 
   .dd:hover {
@@ -77,12 +85,12 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
 
   .dbe {
     filter: grayscale(100%);
-    color: #11a832;
+    color: #fb7b6b;
   }
 
   .dbe:hover {
@@ -90,12 +98,12 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
 
   .dba {
     filter: grayscale(100%);
-    color: #7028b4;
+    color: #e7d39f;
   }
 
   .dba:hover {
@@ -103,13 +111,12 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
-
 
   .mo {
     filter: grayscale(100%);
-    color: #e7891d;
+    color: #00bcd4;
   }
 
   .mo:hover {
@@ -117,12 +124,12 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
 
   .wd {
     filter: grayscale(100%);
-    color: #c1c325;
+    color: #ff5722;
   }
 
   .wd:hover {
@@ -130,12 +137,12 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
 
   .oa {
     filter: grayscale(100%);
-    color: #e73e76;
+    color: #dd2c00;
   }
 
   .oa:hover {
@@ -143,9 +150,8 @@
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    filter: grayscale(10%);
+    filter: grayscale(5%);
   }
-
 
   .fa-twitter {
     color: #1da1f2;
@@ -202,7 +208,7 @@
     </a>
   </div>
   <div class="hi">
-    <h1>Hi, I'm Seth.</h1>
+    <h1 id="typeit">Hi, I'm Seth 👋</h1>
     <h2>I've held quite a few titles in the last 7 years.</h2>
     <div class="titles">
       <ul>
