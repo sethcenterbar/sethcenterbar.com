@@ -36,9 +36,18 @@
   }
 
   .about-me {
-    margin-top: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
     font-size: 1.2rem;
+  }
+
+  .about-me h2 {
     text-align: left;
+  }
+
+  .about-me p {
+    margin-top: .3rem;
+    text-align: justify;
     line-height: 140%;
   }
 
@@ -57,7 +66,7 @@
 
   .titles ul {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     font-family: "Overpass";
     font-weight: 900;
     text-transform: uppercase;
