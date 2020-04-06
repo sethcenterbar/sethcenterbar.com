@@ -40,6 +40,113 @@
     height: 40px;
   }
 
+  .titles {
+    margin-top: 1rem;
+    min-width: 100%;
+  }
+
+  .titles ul {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Overpass";
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+
+  .de {
+    filter: grayscale(100%);
+    color: #f32f31;
+  }
+
+  .de:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+  .dd {
+    filter: grayscale(100%);
+    color: #1da1f2;
+  }
+
+  .dd:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+  .dbe {
+    filter: grayscale(100%);
+    color: #11a832;
+  }
+
+  .dbe:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+  .dba {
+    filter: grayscale(100%);
+    color: #7028b4;
+  }
+
+  .dba:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+
+  .mo {
+    filter: grayscale(100%);
+    color: #e7891d;
+  }
+
+  .mo:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+  .wd {
+    filter: grayscale(100%);
+    color: #c1c325;
+  }
+
+  .wd:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+  .oa {
+    filter: grayscale(100%);
+    color: #e73e76;
+  }
+
+  .oa:hover {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    filter: grayscale(10%);
+  }
+
+
   .fa-twitter {
     color: #1da1f2;
   }
@@ -96,10 +203,19 @@
   </div>
   <div class="hi">
     <h1>Hi, I'm Seth.</h1>
-    <h2>
-      Data Engineer by day, Full Stack Engineer in my head
-      <b>🤠</b>
-    </h2>
+    <h2>I've held quite a few titles in the last 7 years.</h2>
+    <div class="titles">
+      <ul>
+        <li class="de">Data Engineer</li>
+        <li class="dbe">Database Engineer</li>
+        <li class="dba">Database Administrator</li>
+        <li class="dd">Database Developer</li>
+        <li class="wd">Web Developer</li>
+        <li class="oa">Operations Analyst</li>
+        <li class="mo">Mainframe Operator</li>
+
+      </ul>
+    </div>
     <div class="about-me">
       <h2>About Me</h2>
       <p>
