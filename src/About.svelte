@@ -39,6 +39,7 @@
     margin-top: 2rem;
     font-size: 1.2rem;
     text-align: left;
+    line-height: 140%;
   }
 
   .social {
@@ -60,6 +61,7 @@
     font-family: "Overpass";
     font-weight: 900;
     text-transform: uppercase;
+    margin-bottom: 1rem;
   }
 
   .de {
@@ -202,10 +204,8 @@
 
 <div class="container">
   <div class="headshot hover_image">
-    <a href="#" class="hover_image">
-      <img alt="headshot" src="headshot.png" />
-      <img alt="meme headshot" src="memeheadshot.png" class="hide" />
-    </a>
+    <img alt="headshot" src="headshot.png" />
+    <img alt="meme headshot" src="memeheadshot.png" class="hide" />
   </div>
   <div class="hi">
     <h1 id="typeit">Hi, I'm Seth 👋</h1>
@@ -219,7 +219,6 @@
         <li class="wd">Web Developer</li>
         <li class="oa">Operations Analyst</li>
         <li class="mo">Mainframe Operator</li>
-
       </ul>
     </div>
     <div class="about-me">

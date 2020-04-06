@@ -28,7 +28,7 @@
 <main>
   <Navbar />
   <div class="content">
-    <h2>🛠 [Site in active development 4/5/2020] 🛠</h2>
+    <h2>🛠 [Site in active development 4/6/2020] 🛠</h2>
     <Router {routes}/>
   </div>
 </main>
