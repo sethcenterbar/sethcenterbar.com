@@ -1,30 +1,41 @@
 <script>
   import { onMount } from "svelte";
+  import GithubCard from "./GithubCard.svelte";
+  let allRepos;
   let repos;
 
   onMount(async () => {
-    await fetch(`https://api.github.com/users/sethcenterbar/repos`)
+    fetch(`https://api.github.com/users/sethcenterbar/repos`)
       .then(r => r.json())
       .then(data => {
-        repos = data;
+        repos = data.filter(e => {
+          return e.fork === false;
+        });
+      })
+      .catch(error => {
+        console.log(error);
       });
-      console.log(typeof repos);
   });
 </script>
 
 <style>
-
+  main {
+    margin: 0 auto;
+  }
 </style>
 
 <main>
-<p>test</p>
-{#if repos}
+  {#if repos}
     {#each repos as repo}
-        <li>{repo.name}</li>
+      <li>{repo.name} -> {repo.description}</li>
+      <GithubCard
+        repo={repo.name}
+        description={repo.description}
+        link={repo.html_url} />
     {/each}
-{:else}
+  {:else}
     <p>loading...</p>
-{/if}
-<p></p>
+  {/if}
+  <p />
 
 </main>
