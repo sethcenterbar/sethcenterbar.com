@@ -98,6 +98,7 @@
 
     .main {
       margin: 0;
+      margin-bottom: 10rem;
     }
   }
 
