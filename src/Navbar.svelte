@@ -245,7 +245,7 @@
     </li>
 
     <li class="nav-item">
-      <a href="https://github.com/sethcenterbar?tab=repositories" class="nav-link">
+      <a href="/projects" class="nav-link">
         <svg
           aria-hidden="true"
           focusable="false"
